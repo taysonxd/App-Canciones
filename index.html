@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador de Letras</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main id="contenido" class="contenido">
+        <h1>Letras de Canciones</h1>
+        <div class="contenedor">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div id="buscar" class="buscar">
+                        <h2>Búsqueda</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Busca por artista y canción:</p>
+                                <form action="#" id="formulario-buscar">
+                                    <div class="input">
+                                        <label for="artista"><span>*</span> Artista: </label>
+                                        <input class="form-control" type="text" id="artista" placeholder="Artista">
+                                    </div>
+                                    <div class="input">
+                                        <label for="cancion"><span>*</span> Canción: </label>
+                                        <input class="form-control" type="text" id="cancion" placeholder="Nombre Canción">
+                                    </div>
+                                    <p><span> * </span>Obligatorio</p>
+                                    <div class="input enviar">
+                                        <input class="btn btn-primary" type="submit" value="Buscar">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mensajes" class="mt-3"></div>
+                </div>
+                <div class="d-flex justify-content-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="letra-resultado align-self-center">
+                        <h2></h2>
+                        <div id="resultado"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>    
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
